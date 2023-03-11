@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Encuesta de satisfacción</title>
+	<style>
+		form {
+			margin: 20px;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			background-color: #f9f9f9;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+
+		input[type="radio"] {
+			margin-right: 5px;
+		}
+
+		input[type="submit"] {
+			margin-top: 20px;
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<form id="encuesta" onsubmit="return false;">
+		<h2>Encuesta de satisfacción</h2>
+		<p>Por favor, conteste las siguientes preguntas:</p>
+		<label>1. ¿Cómo calificaría nuestro servicio?</label>
+		<input type="radio" name="servicio" value="excelente">Excelente<br>
+		<input type="radio" name="servicio" value="bueno">Bueno<br>
+		<input type="radio" name="servicio" value="regular">Regular<br>
+		<input type="radio" name="servicio" value="malo">Malo<br>
+
+		<label>2. ¿Cuánto tiempo esperó para ser atendido/a?</label>
+		<input type="radio" name="espera" value="menos de 5 minutos">Menos de 5 minutos<br>
+		<input type="radio" name="espera" value="entre 5 y 10 minutos">Entre 5 y 10 minutos<br>
+		<input type="radio" name="espera" value="entre 10 y 20 minutos">Entre 10 y 20 minutos<br>
+		<input type="radio" name="espera" value="más de 20 minutos">Más de 20 minutos<br>
+
+		<label>3. ¿Está satisfecho/a con el trato recibido?</label>
+		<input type="radio" name="trato" value="muy satisfecho">Muy satisfecho<br>
+		<input type="radio" name="trato" value="satisfecho">Satisfecho<br>
+		<input type="radio" name="trato" value="poco satisfecho">Poco satisfecho<br>
+		<input type="radio" name="trato" value="nada satisfecho">Nada satisfecho<br>
+
+		<label>4. ¿Recomendaría nuestro servicio?</label>
+		<input type="radio" name="recomendar" value="definitivamente sí">Definitivamente sí<br>
+		<input type="radio" name="recomendar" value="probablemente sí">Probablemente sí<br
+
+        	<label>5. ¿Qué aspecto de nuestro servicio es el que más valora?</label>
+	<input type="text" name="aspecto_valorado"><br>
+
+	<label>6. ¿En qué aspectos podemos mejorar?</label>
+	<textarea name="mejoras" rows="4" cols="50"></textarea><br>
+
+	<label>7. ¿Con qué frecuencia utiliza nuestros servicios?</label>
+	<input type="radio" name="frecuencia" value="diariamente">Diariamente<br>
+	<input type="radio" name="frecuencia" value="semanalmente">Semanalmente<br>
+	<input type="radio" name="frecuencia" value="mensualmente">Mensualmente<br>
+	<input type="radio" name="frecuencia" value="ocasionalmente">Ocasionalmente<br>
+
+	<label>8. ¿Conoce nuestros productos/servicios?</label>
+	<input type="radio" name="conocimiento" value="totalmente">Totalmente<br>
+	<input type="radio" name="conocimiento" value="en parte">En parte<br>
+	<input type="radio" name="conocimiento" value="poco">Poco<br>
+	<input type="radio" name="conocimiento" value="nada">Nada<br>
+
+	<label>9. ¿Qué piensa de la calidad de nuestros productos/servicios?</label>
+	<input type="radio" name="calidad" value="excelente">Excelente<br>
+	<input type="radio" name="calidad" value="buena">Buena<br>
+	<input type="radio" name="calidad" value="regular">Regular<br>
+	<input type="radio" name="calidad" value="mala">Mala<br>
+
+	<label>10. ¿Ha tenido algún problema con nuestros productos/servicios?</label>
+	<input type="radio" name="problema" value="sí">Sí<br>
+	<input type="radio" name="problema" value="no">No<br>
+
+	<label>11. En caso afirmativo, ¿cómo se resolvió el problema?</label>
+	<textarea name="solucion_problema" rows="4" cols="50"></textarea><br>
+
+	<label>12. ¿Cómo nos conoció?</label>
+	<input type="radio" name="conocimiento_empresa" value="por recomendación">Por recomendación<br>
+	<input type="radio" name="conocimiento_empresa" value="a través de internet">A través de internet<br>
+	<input type="radio" name="conocimiento_empresa" value="por publicidad">Por publicidad<br>
+	<input type="radio" name="conocimiento_empresa" value="por otros medios">Por otros medios<br>
+
+	<label>13. ¿Le gustaría recibir información sobre nuestros productos/servicios?</label>
+	<input type="radio" name="informacion" value="sí">Sí<br>
+	<input type="radio" name="informacion" value="no">No<br>
+
+	<label>14. ¿Cómo le gustaría recibir la información?</label>
+	<input type="checkbox" name="informacion_por_email">Por email<br>
+	<input type="checkbox" name="informacion_por_telefono">Por teléfono<br>
+
+    	<label>15. ¿Le gustaría recibir promociones y descuentos?</label>
+	<input type="radio" name="promociones" value="sí">Sí<br>
+	<input type="radio" name="promociones" value="no">No<br>
+
+	<label>16. ¿Ha recomendado nuestros productos/servicios a alguien más?</label>
+	<input type="radio" name="recomendacion" value="sí">Sí<br>
+	<input type="radio" name="recomendacion" value="no">No<br>
+
+	<label>17. ¿Recomendaría nuestros productos/servicios a alguien más?</label>
+	<input type="radio" name="recomendacion_otro" value="sí">Sí<br>
+	<input type="radio" name="recomendacion_otro" value="no">No<br>
+
+	<label>18. ¿Tiene alguna sugerencia para mejorar nuestros productos/servicios?</label>
+	<textarea name="sugerencias" rows="4" cols="50"></textarea><br>
+
+	<label>19. ¿Cómo calificaría nuestro servicio al cliente?</label>
+	<input type="radio" name="servicio_cliente" value="excelente">Excelente<br>
+	<input type="radio" name="servicio_cliente" value="bueno">Bueno<br>
+	<input type="radio" name="servicio_cliente" value="regular">Regular<br>
+	<input type="radio" name="servicio_cliente" value="malo">Malo<br>
+
+	<label>20. ¿Tiene algún comentario adicional?</label>
+	<textarea name="comentarios_adicionales" rows="4" cols="50"></textarea><br>
+
+	<input type="submit" value="Enviar encuesta">
+</form>
+</body>
+</html>
