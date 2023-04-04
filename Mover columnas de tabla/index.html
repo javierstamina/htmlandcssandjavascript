@@ -1,0 +1,69 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Arrastrar y mover columnas de una tabla en HTML5 y CSS3 con Javascript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/css/main.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+    <main>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th draggable="true" data-property="name">Nombre</th>
+                        <th draggable="true" data-property="age">Edad</th>
+                        <th draggable="true" data-property="height">Altura</th>
+                        <th draggable="true" data-property="weight">Peso</th>
+                        <th draggable="true" data-property="qty">Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-property="name">Manuel</td>
+                        <td data-property="age">25</td>
+                        <td data-property="height">1,80</td>
+                        <td data-property="weight">87kg</td>
+                        <td data-property="qty">44</td>
+                    </tr>
+                    <tr>
+                        <td data-property="name">Alejandro</td>
+                        <td data-property="age">28</td>
+                        <td data-property="height">1,77</td>
+                        <td data-property="weight">78kg</td>
+                        <td data-property="qty">21</td>
+                    </tr>
+                    <tr>
+                        <td data-property="name">Alejandro</td>
+                        <td data-property="age">17</td>
+                        <td data-property="height">1,87</td>
+                        <td data-property="weight">95kg</td>
+                        <td data-property="qty">20</td>
+                    </tr>
+                    <tr>
+                        <td data-property="name">Maria</td>
+                        <td data-property="age">29</td>
+                        <td data-property="height">1,64</td>
+                        <td data-property="weight">68kg</td>
+                        <td data-property="qty">107</td>
+                    </tr>
+                    <tr>
+                        <td data-property="name">Francisco</td>
+                        <td data-property="age">31</td>
+                        <td data-property="height">1,77</td>
+                        <td data-property="weight">78kg</td>
+                        <td data-property="qty">55</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src='main.js'></script>
+</body>
+</html>

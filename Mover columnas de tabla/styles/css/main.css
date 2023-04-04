@@ -1,0 +1,48 @@
+html, body {
+    box-sizing: border-box;
+    background-color: #25333d;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    table {
+        border-collapse: collapse;
+        box-sizing: border-box;
+        tr {
+            background-color: #1f2327;
+            color: white;
+            font-size: 19.5px;
+            text-align: start;
+            &:nth-child(2n+1) {
+                background-color: #25333d;
+            }
+            td {
+                padding: 8px 16px;
+                text-align: start;
+            }
+        }
+        thead {
+            tr {
+                th {
+                    padding: 8px 16px;
+                    text-align: start;
+                    font-weight: 700;
+                    min-width: 120px;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    &.drag-hovered {
+                        border-left: 4px solid white;
+                    }
+                }
+            }
+        }
+    }
+}
